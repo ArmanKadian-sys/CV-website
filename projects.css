@@ -1,0 +1,150 @@
+.project-container {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 750px;
+    display: flex;
+    margin-top: 150px;
+    border-radius: 5px;
+    height: 404px;
+    background-color: #f5f5f5;
+    margin-bottom: 150px;
+}
+
+.project_heading {
+    color: #1A2A6C;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.project_subheading {
+    color: #1A2A6C;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.project_description {
+    margin-top: 100px;
+    line-height: 1.5em;
+    font-size: 17px;
+    font-weight: 350;
+    color: #1A2A6C;
+    margin-left: 20px;
+}
+
+.project_part2 {
+    height: 404px;
+    width: 322px;
+}
+
+.project_image {
+    border-radius:0px 5px 5px 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.project_part1 {
+    height: 404px;
+    width: 428px;
+
+}
+
+.project_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+
+
+.a_part1 {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    height: 50%;
+    background-color: #1A2A6C;
+    color: #f5f5f5;
+}
+
+.a_part2 {
+    color: #f5f5f5;
+    background-color: #1A2A6C;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    
+}
+
+
+.project_part2 a{   
+    transform: translate(0px,-10px);
+    opacity: 1;
+    animation-name: fora2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+    color: #f5f5f5;
+    transition-duration: 0.2s;
+}
+
+.project_part2 a:hover{   
+  color: gold;
+}
+
+
+
+@keyframes fora1 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+.project_part2 svg{
+    opacity: 0;
+    animation-name: fora1;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fora2 {
+    from{
+       transform: translate(0px,-10px);
+    }
+    to{
+       transform: translate(0px,10px);
+    }
+}
+
+
+.project_starting{
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top:50px;
+    background-image: url(projectsimage.jpg);
+    height: 610px;
+    animation-name: disssapear;
+    animation-timing-function: linear;
+    animation-timeline: scroll();
+    animation-fill-mode: forwards;
+}
